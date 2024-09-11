@@ -83,7 +83,7 @@ class ValidateExpression:
     @staticmethod
     def check_the_beginning_of_expression(expression: str) -> str | SyntaxError:
         """
-        Провека начала выражения. Выражение может начинаться с (,-, число.
+        Проверка начала выражения. Выражение может начинаться с (,-, число.
 
         @param expression (str): Математическое выражение в виде строки.
         @return: expression or SyntaxError
