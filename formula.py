@@ -117,7 +117,7 @@ class ExpressionEvaluator:
         # Перемещаем оставшиеся операторы из стека в выходную строку.
         while operators:
             output.append(operators.pop())
-        print(output)
+
         return output
 
     def calculate_postfix(self, postfix: List[str]) -> float:
@@ -145,4 +145,3 @@ class ExpressionEvaluator:
                 stack.append(operation(left, right))
         # Окончательный результат будет единственным элементом в стеке.
         return stack[0]
-
