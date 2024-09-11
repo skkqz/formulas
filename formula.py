@@ -146,10 +146,3 @@ class ExpressionEvaluator:
         # Окончательный результат будет единственным элементом в стеке.
         return stack[0]
 
-
-test = ExpressionEvaluator()
-print(test.evaluate('2*2+(3+5 * (5+5)) * 2'))
-# print(test.to_postfix(['2', '*', '2', '+', '(', '3', '+', '5', ')',  '*', '2']))
-# print(test.calculate_postfix(['3', '5', '2', '*', '+']))
-
-# print(test.tokenize('8+ 2='.replace(' ', '')))
